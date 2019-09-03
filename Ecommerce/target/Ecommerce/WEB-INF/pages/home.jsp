@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <style>
-.top{
+ /* .top{
 width:100%;
 height:50px;
 
@@ -15,7 +15,7 @@ color:black;
 position:relative;
 text-align:center;
 }
-
+ */ 
 </style>
 </head>
 <body>
@@ -25,4 +25,7 @@ text-align:center;
 </form>
 </div>
 </body>
-</html>
+</html> --%>
+<form action="commerce">
+<button>Submit</button>
+</form>

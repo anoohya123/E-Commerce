@@ -7,33 +7,40 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <style type="text/css">
-.top{
+/* .top{
 
 width:100%;
-height:50px;
+height:100px;
 
 background-color:yellow;
 color:black;
-position:relative;
+
 text-align:center;
 
-}
+} */
 </style>
 </head>
 <body>
 <div class="top">
-	<c:forEach items="${list1}" var="list1">
+<table>
+
+	<c:forEach items="${list1}" var="list1"><tr>
+	<td>
 		 Image:<img src="data:image/jpg;base64,${list1.base64}"/>
-		<br>
-		<a href="${pageContext.request.contextPath}/commerce2/${list1.prod_list}"> <c:out
+		</td><br>
+		<td><a href="${pageContext.request.contextPath}/commerce2/${list1.prod_list}"> <c:out
 				value="${list1.prod_list}">
 			</c:out>
-		</a>
+		</a></td>
 		<br>
-		<c:out value="${list1.prize}">${list1.prize}</c:out>
+		<td><c:out value="${list1.prize}">${list1.prize}</c:out></td></tr>
 		<br>
-
+		<tr><td><form action="cart">
+<button>Add to Cart</button>
+</form></td></tr>
 	</c:forEach>
+		</table>
 	</div>
+
 </body>
 </html>

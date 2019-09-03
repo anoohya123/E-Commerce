@@ -8,15 +8,7 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 
-<style>
- .top {
-	width: 100%;
-	diaplay:inline;
-	height:100px;
-	top:100px;
-	background-color: #ede9df;
-} 
-</style>
+
 </head>
 <body>
 	<div class="top">
@@ -30,17 +22,10 @@
 		<c:forEach items="${list}" var="list">
 			<a href="${pageContext.request.contextPath}/commerce1/${list.product_type}">${list.product_type}</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			
-			
-			
 			</c:forEach>
 	</div>
 
-<%-- 	<c:forEach items="${list1}" var="list">
-		<c:out value="${list1.product_type}">${list1.product_type}</c:out>
-	</c:forEach>
-	</div>
- --%>	<div class="middle1">
+	<div class="middle1">
 		<img src="shirt.jpg" alt="Trousers"><a href="" />
 	</div>
 	<div class="middle2">

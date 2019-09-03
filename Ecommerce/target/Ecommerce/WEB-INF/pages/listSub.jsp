@@ -8,18 +8,24 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:forEach items="${list2}" var="list2">
-		<c:out value="${list2.prod_list}">${list2.prod_list}</c:out>
-		<br>
-    Image:<c:out value="${list2.image}">${list2.image}</c:out>
-		<br>
+<table>
+	<c:forEach items="${list2}" var="list2"><tr>
+	<td>	<c:out value="${list2.prod_list}">${list2.prod_list}</c:out></td>
+		
+   <td>     Image:<c:out value="${list2.image}">${list2.image}</c:out></td>
+		
 
-		<c:out value="${list2.description}">${list2.description}</c:out>"
-	 <c:out value="${list2.prize}">${list2.prize}</c:out>
-		<br>
-		<c:out value="${list2.quantity}">${list2.quantity}</c:out>
-		<br>
-
+	<td>    <c:out value="${list2.description}">${list2.description}</c:out><td>
+	<td>       <c:out value="${list2.prize}">${list2.prize}</c:out></td>
+		
+		<td><c:out value="${list2.quantity}">${list2.quantity}</c:out></td>
+		</tr>
+		<tr><td>
+ <form action="cart">
+<button>Add to Cart</button><br><br>
+</form></td></tr>
 	</c:forEach>
+	</table>
+	
 </body>
 </html>

@@ -28,13 +28,15 @@ public class SubData {
  public byte[] image;
 	@Column
  public String description;
+	
 	private String base64;
  
-	@Transient
-	public String getBase64() {
-		return this.base64=Base64.encode(this.image);
-	}
+	
 
+@Transient
+public String getBase64() {
+	return this.base64=Base64.encode(this.image);
+	}
 	public void setBase64(String base64) {
 		this.base64 = base64;
 	}
@@ -99,7 +101,7 @@ public void setDescription(String description) {
 @Override
 public String toString() {
 	return "SubData [id=" + id + ", prod_list=" + prod_list + ", prize=" + prize + ", quantity=" + quantity + ", image="
-			+ Arrays.toString(image) + ", description=" + description + "]";
+			+ Arrays.toString(image) + ", description=" + description +  "base64=" + base64+ "]";
 }
 
  
