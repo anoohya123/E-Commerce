@@ -40,9 +40,7 @@ public class EcommerceDao_impl implements EcommerceDao {
 	public List<SubData> listProducts(String product_type) {
 		Session session = this.sessionFactory.getCurrentSession();
 		Query query =session.createQuery("from SubData where product_type='"+product_type+"'");
-		
 		 List<SubData> list1=query.list();
-	
 		return list1;
 	}
 	@SuppressWarnings("unchecked")

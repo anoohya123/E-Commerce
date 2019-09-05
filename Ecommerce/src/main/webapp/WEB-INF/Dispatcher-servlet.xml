@@ -20,7 +20,7 @@
 		class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName"
 			value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/wls" />
+		<property name="url" value="jdbc:mysql://localhost:3306/wills" />
 		<property name="username" value="root" />
 		<property name="password" value="techouts" />
 	</bean>
@@ -32,6 +32,7 @@
 			<list>
 				<value>com.smvc.pojo.MainData</value>
 				<value>com.smvc.pojo.SubData</value>
+				<value>com.smvc.pojo.Order1</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
@@ -39,6 +40,7 @@
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
 				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
 			</props>
 		</property>
 	</bean>

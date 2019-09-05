@@ -20,30 +20,34 @@
 			value="index.jsp" />
 	</definition> -->
 
-	<definition name="home" extends="base.definition">
+	<definition name="display" extends="base.definition">
 		<put-attribute name="title" value="" />
 		<put-attribute name="body"
-			value="/WEB-INF/pages/home.jsp" />
+			value="/WEB-INF/pages/display.jsp" />
 	</definition>
+	
 	<definition name="listItems" extends="base.definition">
 		<put-attribute name="title" value="" />
 		<put-attribute name="body"
 			value="/WEB-INF/pages/listItems.jsp" />
 	</definition>
+	
 	<definition name="listMain" extends="base.definition">
 		<put-attribute name="title" value="" />
 		<put-attribute name="body"
 			value="/WEB-INF/pages/listMain.jsp" />
 	</definition>
+	
 	<definition name="listSub" extends="base.definition">
 		<put-attribute name="title" value="" />
 		<put-attribute name="body"
 			value="/WEB-INF/pages/listSub.jsp" />
 	</definition>
+	
 	<definition name="cart" extends="base.definition">
 	<put-attribute name="title" value="" />
 		<put-attribute name="body"
-			value="/WEB-INF/pages/cart.jsp" />
+			value="/WEB-INF/pages/cart1.jsp" />
 	</definition>
 
 </tiles-definitions>

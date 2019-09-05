@@ -9,9 +9,9 @@
 <title><tiles:insertAttribute name="title" ignore="true" /></title>    
 </head>    
 <body>    
-        <div  style="float:left;width:100%;top:0;text-align:right;position:fixed;"><tiles:insertAttribute name="header" /></div>    
+        <div  style="float:left;width:100%;height:20%;top:0;text-align:right;background-color: green;display:inline-block;"><tiles:insertAttribute name="header" /></div>    
           
-       <div  style="padding:10px;width:100%;display:inline;"><tiles:insertAttribute name="body" /></div>    
-        <div style="width:100%;height:50px;bottom:0;background-color:yellow;color:black;position:fixed;text-align:center;"><tiles:insertAttribute name="footer" /></div>       
+       <div  style="padding:10px;width:100%;height:75%;display:inline-block;"><tiles:insertAttribute name="body" /></div>    
+        <div style="width:100%;height:5%;bottom:0;background-color:yellow;color:black;text-align:center;display:inline-block;"><tiles:insertAttribute name="footer" /></div>       
 </body>    
 </html>

@@ -1,5 +1,6 @@
-<%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+ <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <h2>welcome </h2>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
- 
-<jsp:forward page="display"/>
+ <%-- <jsp:include page="display"/>  --%>
+<jsp:forward page="display"/> 
+<jsp
 </body>
-</html> --%>
-<jsp:forward page="display"/>
+</html> 
+

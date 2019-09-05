@@ -8,24 +8,31 @@
 <title>Insert title here</title>
 </head>
 <body>
-<table>
-	<c:forEach items="${list2}" var="list2"><tr>
-	<td>	<c:out value="${list2.prod_list}">${list2.prod_list}</c:out></td>
-		
-   <td>     Image:<c:out value="${list2.image}">${list2.image}</c:out></td>
-		
+	<table>
+		<c:forEach items="${list2}" var="list2">
 
-	<td>    <c:out value="${list2.description}">${list2.description}</c:out><td>
-	<td>       <c:out value="${list2.prize}">${list2.prize}</c:out></td>
-		
-		<td><c:out value="${list2.quantity}">${list2.quantity}</c:out></td>
-		</tr>
-		<tr><td>
- <form action="cart">
-<button>Add to Cart</button><br><br>
-</form></td></tr>
-	</c:forEach>
+			<tr>
+				<td><img src="data:image/jpg;base64,${list2.base64}" /></td>
+			</tr>
+			<tr>
+				<td><c:out value="${list2.prod_list}">${list2.prod_list}</c:out></td>
+			</tr>
+			<tr>
+				<td><c:out value="${list2.description}">${list2.description}</c:out>
+				<td>
+			</tr>
+			<tr>
+				<td>Price: <c:out value="${list2.prize}">${list2.prize}</c:out></td>
+			</tr>
+			<tr>
+				<td>
+					<form action="cart">
+						<button>Add to Cart</button>
+					</form>
+				</td>
+			</tr>
+		</c:forEach>
 	</table>
-	
+
 </body>
 </html>

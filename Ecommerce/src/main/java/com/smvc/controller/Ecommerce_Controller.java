@@ -39,7 +39,7 @@ public ModelAndView data3(@PathVariable String prod_list,@ModelAttribute SubData
 
 @RequestMapping("/display")
 public ModelAndView data() {
-	return new ModelAndView("home");
+	return new ModelAndView("display");
 }
 	
 }
